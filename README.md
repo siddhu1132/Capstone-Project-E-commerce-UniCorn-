@@ -138,8 +138,8 @@ The Following questions has been answered in ``Getting Insights using Tableau/Ca
 
 8. _What is the profit for different regions in each year?_
 
-9. _Are there any regional sales differences in product category on Unicorn?
+9. _Are there any regional sales differences in product category on Unicorn?_
 
-10. _What are the top-selling products in each region and each year for different product category?
+10. _What are the top-selling products in each region and each year for different product category?_
 
 The dashboard link for this insights is : [Dashboard](https://public.tableau.com/authoring/Capstone_project_Insights/Dashboard1#1)
