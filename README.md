@@ -244,8 +244,7 @@ GROUP BY 1
 ORDER BY 2 DESC;
 ```
 
-19. _Show the product_subcategory and the total number of products in the subcategory.
-Show the order from most to least products and then by product_subcategory name ascending. _
+19. _Show the product_subcategory and the total number of products in the subcategory. Show the order from most to least products and then by product_subcategory name ascending. _
 
 ```sql
 SELECT product_subcategory, COUNT(product_subcategory) AS total_products
@@ -264,3 +263,56 @@ ON od.product_id = p.product_id
 GROUP BY p.product_id
 HAVING SUM(od.quantity) >= 100
 ```
+
+# PART 2: Data Cleaning and Analysis with Spreadsheet
+
+In the second part of the project, the task is to answer the following questions by querying the dataset using spreadsheet software.
+Explore a unified dataset (.csv file) in a spreadsheet software. Use your data analysis skills to visualize the data and uncover interesting insights.
+
+1. _What was the city with the highest sales?_
+
+2. _What is the average discount given for all orders?_
+
+3. _What is the most popular product among customers in the "Consumer" segment?_
+
+4. _What is the total profit made for the "Office Supplies" category?_
+
+5. _Who is the customer who has made the most purchases?_
+
+6. _What state made the most profit?_
+
+7. _How many orders were shipped via "Standard Class" ship mode?_
+
+8. _Which region had the highest sales in the month of June?_
+
+9. _Calculate the price per unit of each product (before discounts), and put it in a separate column. What's the most expensive product?_
+
+10. _Create a pivot table that shows the total sales for each manufacturer and category combination. In the "Technology" category, which manufacturer had the second highest sales?_
+
+11. _Create a new column that calculates the profit margin for each order_
+
+12. _Use a VLOOKUP function to create a new column that shows the product sub-category for each product based on the separate sub-category sheet. What is the subcategory of “Xerox 1887”?_
+
+13. _Create a new column that calculates the number of days between the order date and the ship date for each order. Create a conditional formatting “color scale” for this column, from greenish to reddish. What is the number of days for order id - “CA-2015-100363”?_
+
+14. _Use the INDEX and MATCH functions to create a new column that shows the shipping cost for each order based on the separate shipping prices sheet. Assume that quantity or weight doesn’t matter. What is the shipping price for order id “CA-2015-100678”?_
+
+15. _Create a new column that concatenates the customer name, city, and state into a single string for each order. Select the correct result for CA-2015-100090?_
+
+16. _Use the IFS function to create a new column that categorizes each order as "High," "Low," or "Loss" based on profit and sales criteria.
+```
+"High" consider as:
+  
+   - If sales are above 200 and profit is above 20
+
+    - If profit is above 40.
+
+       Else:
+  ```
+ If the profit is equal or below 0 this is categorized as “Loss”
+Any other case this is categorized as "Low"
+Use conditional formatting to color the columns with the values “High” in green and the value “Loss” in red.**_
+
+17. _In a new sheet, create a dropdown of category and product which returns the price for a unit (which you previously solved in exercise 9._
+
+How many “Loss” do you have?
