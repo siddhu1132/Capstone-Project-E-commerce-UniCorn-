@@ -116,3 +116,30 @@ How many “Loss” do you have?_
 
 17. _In a new sheet, create a dropdown of category and product which returns the price for a unit (which you previously solved in exercise 9._
 
+# PART 3: Getting Insights using Tableau
+
+For task 3, the objective is to utilize Tableau software to conduct exploratory data analysis and extract distinctive insights from the dataset. The next step is to create an interactive dashboard that will present the findings in a dynamic way. This will enable us to analyze and interpret the data more effectively, identify trends and patterns, and make data-driven decisions.
+
+The Following questions has been answered in ``Getting Insights using Tableau/Capstone_Project_Insights.twbx``
+
+1. _What is the most profitable city in the State of Tennessee?_
+
+2. _What is the average annual profit for that city across all years in that city?_
+
+3. _What is the most profitable product category on average in Iowa across all years?_
+
+4. _What is the most popular product in that category across all states in 2016?_
+
+5. _What was the most profitable month in 2018 overall?_
+
+6. _How widely did monthly profits vary in 2018?_
+
+7. _Which regions have the highest sales volume on Unicorn, and how has this changed over time (2015-2018)?_
+
+8. _What is the profit for different regions in each year?_
+
+9. _Are there any regional sales differences in product category on Unicorn?
+
+10. _What are the top-selling products in each region and each year for different product category?
+
+The dashboard link for this insights is : `[click here](https://public.tableau.com/authoring/Capstone_project_Insights/Dashboard1#1)`
