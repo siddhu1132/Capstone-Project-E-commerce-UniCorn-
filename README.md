@@ -142,4 +142,4 @@ The Following questions has been answered in ``Getting Insights using Tableau/Ca
 
 10. _What are the top-selling products in each region and each year for different product category?
 
-The dashboard link for this insights is : `[click here](https://public.tableau.com/authoring/Capstone_project_Insights/Dashboard1#1)`
+The dashboard link for this insights is : `[Dashboard](https://public.tableau.com/authoring/Capstone_project_Insights/Dashboard1#1).`
