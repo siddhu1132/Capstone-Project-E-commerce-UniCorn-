@@ -15,6 +15,7 @@ The project includes three main parts, each with their own subtasks:
 2. Data Cleaning and Analysis with Spreadsheet
 3. Getting Insights using Tableau
 
+![](https://github.com/siddhu1132/Capstone-Project-E-commerce-UniCorn-/blob/main/schema.png)
 
 # PART 1 : Data Exploration SQL
 
