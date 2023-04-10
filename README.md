@@ -269,6 +269,8 @@ HAVING SUM(od.quantity) >= 100
 In the second part of the project, the task is to answer the following questions by querying the dataset using spreadsheet software.
 Explore a unified dataset (.csv file) in a spreadsheet software. Use your data analysis skills to visualize the data and uncover interesting insights.
 
+The following questions have been answered in the ``Copy of Spreadsheet.xslx`` and ``new copy.xslx``
+
 1. _What was the city with the highest sales?_
 
 2. _What is the average discount given for all orders?_
@@ -299,7 +301,7 @@ Explore a unified dataset (.csv file) in a spreadsheet software. Use your data a
 
 15. _Create a new column that concatenates the customer name, city, and state into a single string for each order. Select the correct result for CA-2015-100090?_
 
-16. _Use the IFS function to create a new column that categorizes each order as "High," "Low," or "Loss" based on profit and sales criteria._
+16. _Use the IFS function to create a new column that categorizes each order as "High," "Low," or "Loss" based on profit and sales criteria.
 ```
 "High" consider as:
   
