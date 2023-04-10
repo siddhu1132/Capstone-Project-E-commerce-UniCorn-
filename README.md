@@ -234,7 +234,7 @@ FROM product p
 GROUP BY 1;
 ```
 
-18. _Display the number of product manufacturers with more than 1 product in the product table. _
+18. _Display the number of product manufacturers with more than 1 product in the product table._
 
 ```sql
 SELECT DISTINCT p.product_manufacturer, 
@@ -244,7 +244,7 @@ GROUP BY 1
 ORDER BY 2 DESC;
 ```
 
-19. _Show the product_subcategory and the total number of products in the subcategory. Show the order from most to least products and then by product_subcategory name ascending. _
+19. _Show the product_subcategory and the total number of products in the subcategory. Show the order from most to least products and then by product_subcategory name ascending._
 
 ```sql
 SELECT product_subcategory, COUNT(product_subcategory) AS total_products
@@ -299,7 +299,7 @@ Explore a unified dataset (.csv file) in a spreadsheet software. Use your data a
 
 15. _Create a new column that concatenates the customer name, city, and state into a single string for each order. Select the correct result for CA-2015-100090?_
 
-16. _Use the IFS function to create a new column that categorizes each order as "High," "Low," or "Loss" based on profit and sales criteria.
+16. _Use the IFS function to create a new column that categorizes each order as "High," "Low," or "Loss" based on profit and sales criteria._
 ```
 "High" consider as:
   
@@ -308,11 +308,12 @@ Explore a unified dataset (.csv file) in a spreadsheet software. Use your data a
     - If profit is above 40.
 
        Else:
-  ```
+ 
  If the profit is equal or below 0 this is categorized as “Loss”
 Any other case this is categorized as "Low"
-Use conditional formatting to color the columns with the values “High” in green and the value “Loss” in red.**_
+```
+Use conditional formatting to color the columns with the values “High” in green and the value “Loss” in red.** 
+How many “Loss” do you have?_
 
 17. _In a new sheet, create a dropdown of category and product which returns the price for a unit (which you previously solved in exercise 9._
 
-How many “Loss” do you have?
