@@ -26,6 +26,7 @@ In the first part of the project, the task is to answer the following questions 
 ```sql
 SELECT COUNT(*) FROM "customers";
 ```
+
 2. _What was the city with the most profit for the company in 2015?_
 
 ```sql
@@ -38,7 +39,7 @@ SELECT COUNT(*) FROM "customers";
 9.	 WHERE EXTRACT(year FROM o.order_date) = 2015
 10.	 GROUP BY 1
 11.	 ORDER BY 2 DESC;        
-```sql
+```
 
 3. _In 2015, what was the most profitable city's profit?_
 
@@ -52,13 +53,13 @@ SELECT COUNT(*) FROM "customers";
 18.	 WHERE EXTRACT(year FROM o.order_date) = 2015
 19.	 GROUP BY 1
 20.	 ORDER BY 2 DESC;
-```sql
+```
 
 4. _How many different cities do we have in the data?_
 
 ```sql
 SELECT COUNT(DISTINCT shipping_city) FROM  orders;
-```sql
+```
 
 5. _Show the total spent by customers from low to high._
 
@@ -69,7 +70,7 @@ SELECT COUNT(DISTINCT shipping_city) FROM  orders;
 9.	 ON o.order_id = od.order_id
 10.	 GROUP BY 1
 11.	 ORDER BY 2;
-```sql
+```
 
 6. _What is the most profitable city in the State of Tennessee?_
 
@@ -83,7 +84,7 @@ SELECT
  WHERE o.shipping_state = 'Tennessee'
  GROUP BY 1
  ORDER BY 2 DESC;
-```sql
+```
 
 7. _What’s the average annual profit for that city across all years?_
 
@@ -97,7 +98,7 @@ ON o.order_id = od.order_id
 WHERE o.shipping_city = ‘Lebanon’
  GROUP BY 1
  ORDER BY 2 DESC;
-```sql
+```
 
 8. _What is the distribution of customer types in the data?_
 
@@ -106,7 +107,7 @@ SELECT customer_segment,
 COUNT(DISTINCT customers) AS distribution 
 FROM customers
 GROUP BY customer_segment;
-```sql
+```
 
 9. _What’s the most profitable product category on average in Iowa across all years?_
 
@@ -122,7 +123,7 @@ SELECT
  WHERE o.shipping_state = 'Iowa'
  GROUP BY 1
  ORDER BY 2 DESC;
-```sql
+```
 
 10. _What is the most popular product in that category across all states in 2016?_
 
@@ -140,7 +141,7 @@ SELECT
  AND p.product_category = 'Furniture'
  GROUP BY 1
  ORDER BY 2 DESC;
- ```sql
+ ```
  
  11. _Which customer got the most discount in the data? (in total amount)_
  
@@ -156,7 +157,7 @@ INNER JOIN order_details AS od
 ON od.order_id = o.order_id
 GROUP BY 1, 2, 3
 ORDER BY 4 DESC;
-```sql
+```
 
 12. _How widely did monthly profits vary in 2018?_
 
@@ -178,7 +179,7 @@ SELECT month,
     COALESCE(month_total - LAG(month_total,1) OVER (
         ORDER BY month), month_total) AS moth_diff
 FROM month_totals;
-```sql
+```
 
 13. _Which order was the highest in 2015?_
 
@@ -190,7 +191,7 @@ ON o.order_id = od.order_id
 WHERE EXTRACT(year FROM o.order_date) = 2015
 GROUP BY 1
 ORDER BY 2 DESC;
-```sql
+```
 
 14. _What was the rank of each city in the East region in 2015 in quantity?_
 
@@ -205,7 +206,7 @@ WHERE o.shipping_region = 'East'
 AND EXTRACT(year FROM o.order_date) = 2015
 GROUP BY 1
 ORDER BY 3;
-```sql
+```
 
 15. _Display customer names for customers who are in the segment ‘Consumer’ or ‘Corporate.’ How many customers are there in total?_
 
@@ -213,7 +214,7 @@ ORDER BY 3;
 SELECT COUNT(*) AS total_customers
 FROM customers c
 WHERE customer_segment IN ('Consumer','Corporate')
-```sql
+```
 
 16. _Calculate the difference between the largest and smallest order quantities for product id ‘100.’_
 
@@ -221,7 +222,7 @@ WHERE customer_segment IN ('Consumer','Corporate')
 SELECT MAX(od.quantity)-MIN(od.quantity) AS diff
 FROM order_details AS od
 WHERE od.product_id = '100'
-```sql
+```
 
 17. _Calculate the percent of products that are within the category ‘Furniture.’_
 
@@ -231,7 +232,7 @@ SELECT (SELECT count(*) from product WHERE product_category = 'Furniture') AS fu
         ((SELECT count(*) from product WHERE product_category = 'Furniture') * 100/ (SELECT count(*) from product) :: float ) AS percent
 FROM product p
 GROUP BY 1;
-```sql
+```
 
 18. _Display the number of product manufacturers with more than 1 product in the product table. _
 
@@ -241,7 +242,7 @@ COUNT(p.product_id) AS dupliate_items
 FROM product p
 GROUP BY 1
 ORDER BY 2 DESC;
-```sql
+```
 
 19. _Show the product_subcategory and the total number of products in the subcategory.
 Show the order from most to least products and then by product_subcategory name ascending. _
@@ -251,7 +252,7 @@ SELECT product_subcategory, COUNT(product_subcategory) AS total_products
 FROM product
 GROUP BY 1
 ORDER BY 2 DESC, 1;
-```sql
+```
 
 20. _Show the product_id(s), the sum of quantities, where the total sum of its product quantities is greater than or equal to 100._
 
@@ -262,4 +263,4 @@ INNER JOIN order_details od
 ON od.product_id = p.product_id
 GROUP BY p.product_id
 HAVING SUM(od.quantity) >= 100
-```sql
+```
