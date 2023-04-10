@@ -301,7 +301,7 @@ The following questions have been answered in the ``Copy of Spreadsheet.xslx`` a
 
 15. _Create a new column that concatenates the customer name, city, and state into a single string for each order. Select the correct result for CA-2015-100090?_
 
-16. _Use the IFS function to create a new column that categorizes each order as "High," "Low," or "Loss" based on profit and sales criteria.
+16. _Use the IFS function to create a new column that categorizes each order as "High," "Low," or "Loss" based on profit and sales criteria._
 ```
 "High" consider as:
   
@@ -314,7 +314,7 @@ The following questions have been answered in the ``Copy of Spreadsheet.xslx`` a
  If the profit is equal or below 0 this is categorized as “Loss”
 Any other case this is categorized as "Low"
 ```
-Use conditional formatting to color the columns with the values “High” in green and the value “Loss” in red.** 
+_Use conditional formatting to color the columns with the values “High” in green and the value “Loss” in red.** 
 How many “Loss” do you have?_
 
 17. _In a new sheet, create a dropdown of category and product which returns the price for a unit (which you previously solved in exercise 9._
